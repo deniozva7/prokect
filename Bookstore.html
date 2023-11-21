@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css.css">
+    <title>Bookstore</title>
+</head>
+
+<body>
+    <div class="div_header">
+        <button class="buttons_header">
+            <img src="pictures/profile_button.png" alt="profile_button" width="60" height="60">
+        </button>
+        <img class="books_backgroung_header_1" src="pictures/book_background.png" width="60" height="60">
+        <div>
+            <h1 class="title">BOOKSTORE</h1>
+            <p class="p_header">“Two things are infinite: the universe and human stupidity; and I'm not sure about the
+                universe.”</p>
+            <p style="font-size: 20px;" class="p_header">― Albert Einstein</p>
+        </div>
+        <img class="books_backgroung_header_2" src="pictures/book_background.png" width="60" height="60">
+        <button class="buttons_header">
+            <img src="pictures/shopping_cart_button.png" alt="profile_button" width="60" height="60">
+        </button>
+    </div>
+    <div class="topnav">
+        <div>
+            <a class="active" href="#home">Home</a>
+        </div>
+        <div>
+            <a href="Books.html">Books</a>
+        </div>
+        <div>
+            <a href="Students.html">Students</a>
+        </div>
+        <div>
+            <a href="Gifts.html">Vouchers/Gifts</a>
+        </div>
+        <div>
+            <a href="About.html">About us</a>
+        </div>
+        <div>
+            <a href="Contacts.html">Contacts</a>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="pictures/view1.jpg" style="width:100%">
+            <div class="text">picture 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="slideshow_2.jpg" style="width:100%">
+            <div class="text">picture 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="slideshow_3.jpg" style="width:100%">
+            <div class="text">picture 3</div>
+        </div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+   <img src = "pictures/book_background.png">
+</body>
+
+</html>

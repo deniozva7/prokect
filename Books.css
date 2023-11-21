@@ -1,0 +1,73 @@
+.div_header {
+    background-color: #FFE8D6;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+    /* background-image: url("header_background.jpg"); */
+}
+
+.header {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+body {
+    margin: 0px;
+}
+
+.buttons_header {
+    background-color: #B7B7A4;
+    margin: 20px;
+    border-color: #A5A58D;
+    border-radius: 8px;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(font/Ubutu/Ubuntu-Regular.ttf);
+    font-weight: bold;
+}
+
+.p_header {
+    color: #685454;
+    font-family: Ubuntu;
+}
+
+.header {
+    font-family: system-ui;
+    padding: 16px;
+    background: #FFE8D6;
+    text-align: center;
+    color: #685454;
+    font-size: 30px;
+}
+
+.topnav {
+    position: relataive;
+    overflow: hidden;
+    background-color: #DDBEA9;
+}
+
+.topnav a {
+    float: left;
+    color: #685454;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.topnav a:hover {
+    background-color: #FFE8D6;
+    color: #CB997E;
+}
+
+.topnav a.active {
+    background-color: #FFE8D6;
+    color: #CB997E;
+}
